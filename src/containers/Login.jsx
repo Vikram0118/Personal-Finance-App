@@ -13,15 +13,15 @@ const Login = () => {
 
   return (
     <section className="h-screen bg-[url('./assets/bg-pc.svg')] bg-no-repeat bg-fixed bg-center bg-cover ">
-  <div className="container h-full px-6 py-11 max-w-3xl mx-auto my-auto">
-    <div className="flex h-full flex-wrap items-center justify-center lg:justify-center">
-      <div className="w-10/12 sm:w-9/12 md:w-8/12 lg:w-6/12">
+  <div className="container h-full px-6 py-11 max-w-4xl mx-auto my-auto">
+    <div className="flex flex-col sm:flex-row h-full items-center justify-center lg:justify-center">
+      <div className="w-11/12">
         <img
           src={login}
           className=" pointer-events-none"
           alt="Phone image" />
       </div>
-      <div className="w-10/12 md:w-8/12 sm:9/12 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 bg-gray-400 px-8 pt-8 pb-4 rounded-lg">
+      <div className="w-10/12 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 bg-gray-400 px-8 pt-8 pb-4 rounded-lg">
         <form onSubmit={onSubmit}>
 
           <div className="relative mb-6 flex flex-col gap-2">
