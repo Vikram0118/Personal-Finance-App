@@ -45,7 +45,7 @@ const AddExpense = ({ loggedPerson }) => {
         NameofExpense: nameOfExpense,
         Amount: +amount,
         Category: category,
-        CreatedBy : loggedPerson,
+        CreatedBy : 'Vikram',
         Date: currentDate,
         UpdatedAt: strTime
       }
