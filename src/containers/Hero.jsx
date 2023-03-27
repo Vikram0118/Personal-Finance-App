@@ -1,9 +1,28 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { Header, MainBody } from '../components'
 
 const Hero = () => {
+
+  const [searchByName, setSearchByName] = useState('')
+  const [searchByDate, setSearchByDate] = useState('')
+
   return (
-    <div className='h-screen bg-slate-600'>
-    </div>
+    <>
+        <div className=''>
+          <Header 
+            searchByDate={searchByDate}
+            setSearchByDate={setSearchByDate}
+            searchByName={searchByName}
+            setSearchByName={setSearchByName}
+          />
+        </div>
+        <div className='mt-40 sm:mt-24 '>
+          <MainBody
+            searchByName={searchByName}
+            searchByDate={searchByDate}
+          />
+        </div>
+    </>
   )
 }
 
