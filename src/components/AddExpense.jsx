@@ -3,7 +3,7 @@ import { FaPlus } from 'react-icons/fa'
 import { GrClose } from 'react-icons/gr'
 import {  GlobalContext } from '../GlobalContext/GlobalProvider'
 
-const AddExpense = () => {
+const AddExpense = ({ loggedPerson }) => {
 
   const expenseRef = useRef(null)
   const categoryRef = useRef(null)
@@ -17,7 +17,7 @@ const AddExpense = () => {
 
   const { addTransaction } = useContext(GlobalContext)
 
-  const created = 'varatha'
+  const created = loggedPerson
 
   const onSubmitExpense = (e) => {
     e.preventDefault()
@@ -45,7 +45,7 @@ const AddExpense = () => {
         NameofExpense: nameOfExpense,
         Amount: +amount,
         Category: category,
-        CreatedBy : created,
+        CreatedBy : loggedPerson,
         Date: currentDate,
         UpdatedAt: strTime
       }

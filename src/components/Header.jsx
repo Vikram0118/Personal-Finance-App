@@ -1,7 +1,7 @@
 import React from 'react'
 import { Title, SearchByDate, SearchByName, AddExpense, MainBody } from './index'
 
-const Header = ({searchByName, setSearchByName, searchByDate, setSearchByDate}) => {
+const Header = ({searchByName, setSearchByName, searchByDate, setSearchByDate, loggedPerson}) => {
   return (
     <div className='bg-white w-full fixed top-0 left-0 right-0 z-10 '>
         <div className='flex flex-col sm:flex-row items-start justify-between max-w-6xl mx-auto p-2 sm:p-4'>
@@ -20,7 +20,9 @@ const Header = ({searchByName, setSearchByName, searchByDate, setSearchByDate}) 
                     setSearchByName={setSearchByName}
                   /> 
                 </div>
-                <AddExpense />
+                <AddExpense 
+                  loggedPerson={loggedPerson}
+                />
             </div>
         </div>
     </div>

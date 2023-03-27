@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Header, MainBody } from '../components'
 
-const Hero = () => {
+const Hero = ({loggedPerson}) => {
 
   const [searchByName, setSearchByName] = useState('')
   const [searchByDate, setSearchByDate] = useState('')
@@ -14,6 +14,7 @@ const Hero = () => {
             setSearchByDate={setSearchByDate}
             searchByName={searchByName}
             setSearchByName={setSearchByName}
+            loggedPerson={loggedPerson}
           />
         </div>
         <div className='mt-40 sm:mt-24 '>
