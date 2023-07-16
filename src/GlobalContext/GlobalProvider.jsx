@@ -4,13 +4,13 @@ import AppReducer from '../GlobalContext/AppReducer.js'
 const savedTransactions = JSON.parse(localStorage.getItem("transactions"));
 const InitialState = {
     transactions: savedTransactions ? savedTransactions : [
-        { id: 1, NameofExpense: 'Parotta', Category: 'Food', Date:'03-02-2023', Amount : 150, UpdatedAt:"few min ago", CreatedBy : 'Vikram'  },
-        { id: 2, NameofExpense: 'Biriyani', Category: 'Food', Date:'22-02-2023', Amount : 250, UpdatedAt:"few min ago", CreatedBy : 'Kumar'  },
-        { id: 3, NameofExpense: 'Book',   Category: 'Education', Date:'10-01-2023', Amount : 620, UpdatedAt:"few min ago", CreatedBy : 'Siddhart'  },
-        { id: 4, NameofExpense: 'Camera', Category: 'Passion', Date:'02-02-2023', Amount : 80000, UpdatedAt:"few min ago", CreatedBy : 'Vikram'  },
-        { id: 5, NameofExpense: 'Headphones', Category: 'Entertainment', Date:'27-02-2023', Amount : 3000, UpdatedAt:"few min ago", CreatedBy : 'Jhon'  },
-        { id: 6, NameofExpense: 'Tea', Category: 'Snacks', Date:'18-03-2023', Amount : 50, UpdatedAt:"few min ago", CreatedBy : 'Vikram'  },
-        { id: 7, NameofExpense: 'Book',   Category: 'Education', Date:'11-03-2023', Amount : 500, UpdatedAt:"few min ago", CreatedBy : 'Jhon'  },
+        { id: 1, NameofExpense: 'Parotta', Category: 'Food', Date:'03-02-2023', Amount : 150, UpdatedAt:"2:52 pm", CreatedBy : 'Vikram'  },
+        { id: 2, NameofExpense: 'Biriyani', Category: 'Food', Date:'22-02-2023', Amount : 250, UpdatedAt:"3:14 pm", CreatedBy : 'Kumar'  },
+        { id: 3, NameofExpense: 'Book',   Category: 'Education', Date:'10-01-2023', Amount : 620, UpdatedAt:"12:12 pm", CreatedBy : 'Siddhart'  },
+        { id: 4, NameofExpense: 'Camera', Category: 'Passion', Date:'02-02-2023', Amount : 80000, UpdatedAt:"9:45 am", CreatedBy : 'Vikram'  },
+        { id: 5, NameofExpense: 'Headphones', Category: 'Entertainment', Date:'27-02-2023', Amount : 3000, UpdatedAt:"11:02 am", CreatedBy : 'Jhon'  },
+        { id: 6, NameofExpense: 'Tea', Category: 'Snacks', Date:'18-03-2023', Amount : 50, UpdatedAt:"10:21 am", CreatedBy : 'Vikram'  },
+        { id: 7, NameofExpense: 'Book',   Category: 'Education', Date:'11-03-2023', Amount : 500, UpdatedAt:"11:21 pm", CreatedBy : 'Jhon'  },
     ]
 }
 

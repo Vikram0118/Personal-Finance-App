@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import { login, bgPC, warning, tickMark } from './import'
 import { Link } from 'react-router-dom'
 
@@ -7,8 +7,8 @@ const Login = ({ setLoggedPerson}) => {
   const emailRef = useRef(null)
   const passwordRef = useRef(null)
 
-  const [email, setEmail] = useState('')
-  const [passWord, setPassWord] = useState('')
+  const [email, setEmail] = useState('vikrampalani@gmail.com')
+  const [passWord, setPassWord] = useState('TestPassword')
 
   const[wrongCredentials, setWrongCredentials] = useState(false)
   const[correctCredentials, setCorrectCredentials] = useState(false)
@@ -19,20 +19,8 @@ const Login = ({ setLoggedPerson}) => {
     {
       id: 1,
       emailRegistered:'vikrampalani@gmail.com',
-      passWordRegistered : 'vikram@2003',
+      passWordRegistered : 'TestPassword',
       nameOfThePerson : 'Vikram'
-    },
-    {
-      id: 2,
-      emailRegistered:'kumarvadivelu@gmail.com',
-      passWordRegistered : 'kumar@2003',
-      nameOfThePerson : 'Kumar'
-    },
-    {
-      id: 3,
-      emailRegistered:'varatharaj@gmail.com',
-      passWordRegistered : 'varatha@2003',
-      nameOfThePerson : 'Varatha'
     },
   ]
 
@@ -64,7 +52,7 @@ const Login = ({ setLoggedPerson}) => {
   }
 
   return (
-    <section className="h-screen bg-[url('./assets/bg-pc.svg')] bg-no-repeat bg-fixed bg-center bg-cover ">
+    <section className="h-screen">
   <div className="container h-full px-6 py-11 max-w-4xl mx-auto my-auto">
     <div className="flex flex-col sm:flex-row h-full items-center justify-center lg:justify-center">
       <div className="w-11/12">
